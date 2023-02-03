@@ -1,0 +1,31 @@
+#include <iostream>
+#include <string>
+ 
+using namespace std;
+ 
+const double pi=3.14159;           //константа
+int age=14, b;                     //целые переменные
+double height, weight;             //вещественные переменные
+char c='A', p;                     //символьные переменные
+string name, B="Visual C++";       //строковые переменные
+ 
+int main(){
+  name = "Ivan";
+  weight = age*pi + 12.456;
+  cout << name << " is " << age << " years old." << endl;
+  cout << name << "'s weight makes about " << weight << " kg." << endl;
+  return 0;
+}
+
+
+
+Целые типы данных
+Тип данных	Допустимые значения	Память, байт
+char	-128 ... 127	1
+unsigned char	0 … 255	1
+short	-32768 … 32767	2
+unsigned short	0 … 65535	2
+int	-2147483648 ... 2147483647	4
+unsigned int	0…4294967295	4
+long long	-9223372036854775808 … 9223372036854775807	8
+unsigned long long	0 … 18446744073709551615	8
