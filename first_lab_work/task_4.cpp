@@ -7,24 +7,20 @@
 */ 
 
 
-// #include <iostream>
-// #include <cmath>
+#include <iostream>
+#include <cmath>
 
-// using namespace std;
+using namespace std;
 
-// int time(int hour, int minute, int seconds)
-// {
+int time(int hour, int minute, int seconds)
+{
+    float num_sec = 3600*24-(hour*3600+(minute*60)+seconds);;
+    return num_sec;
+}
 
-//     18:32:42
-//     float num_sec = som / dollar;
-//     float amount_ruble = som / ruble;
-//     cout << "Количество денег в долларах= " << amount_dollar << endl;
-//     cout << "Количество денег в рублях= " << amount_ruble << endl;
-//     return 0;
-// }
+int main()
+{
+    cout << "Интервал времени в секундах= " << time(5, 30, 03)<< endl;
+    return 0;
+}
 
-// int main()
-// {
-//     exchangeRate(90, 1.01, 2000);
-//     return 0;
-// }
