@@ -1,0 +1,15 @@
+To show that a function parameter is passed by
+reference, an ampersand symbol (&) is placed after the
+parameter type in the function prototype; the same
+designation is used in the list of parameter types in the
+function header. For example, the declaration of int
+&count in the function header can be read as "count is
+a reference to int".
+
+
+
+To have a function with multiple outputs, we have to
+use pass by reference.
+
+
+References: A reference variable is an alias, that is, another name for an already existing variable. A reference, like a pointer, is also implemented by storing the address of an object. 
