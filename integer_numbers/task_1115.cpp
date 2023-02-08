@@ -12,17 +12,18 @@ using namespace std;
 
 int main()
 {
-    int number1, number2;
-    cin >> number1 >> number2;
-
-    if (number1 % number2 == 0 || number2 % number1 == 0)
+    int apples, people, amount_d, amount_basket, number_offended;
+    cin >> apples >> people;
+    amount_d = people / apples;
+    amount_basket = people % apples;
+    if (amount_basket != 0)
     {
-        cout << "1" << endl;
+        number_offended = apples - amount_basket;
     }
     else
     {
-        cout << "666" << endl;
+        number_offended = 0;
     }
-
+    cout << amount_d << " " << amount_basket << " " << number_offended << endl;
     return 0;
 }
