@@ -1,5 +1,5 @@
 /*
-2. Overload a function that takes two strings as input and concatenates them. 
+2. Overload a function that takes two strings as input and concatenates them.
 The function should be overloaded to handle different combinations of strings, characters, and integers.
 */
 
@@ -7,12 +7,10 @@ The function should be overloaded to handle different combinations of strings, c
 using namespace std;
 
 string concatenatesString(string a, string b);
-char concatenatesString(char a, char b);
-double concatenatesString(int a, int b);
-
+string concatenatesString(char a, char b);
+string concatenatesString(int a, int b);
 
 int main()
-
 {
     string x, y;
     cout << "Enter 2 strings \n ";
@@ -29,6 +27,6 @@ int main()
     return 0;
 }
 
-string concatenatesString(string a, string b){return a+b;};
-char concatenatesString(char a, char b){return a+b;};;
-double concatenatesString(int a, int b){return a+b;};;
+string concatenatesString(string a, string b) { return a + b; };
+string concatenatesString(char a, char b) { return to_string(a) + to_string(b); };
+string concatenatesString(int a, int b) { return to_string(a) + to_string(b); };

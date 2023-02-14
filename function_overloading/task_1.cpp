@@ -16,13 +16,13 @@ int main()
 
 {
     int x, y;
-    cout << "Enter 2 integers \n ";
+    cout << "Enter 2 integers: \n ";
     cin >> x >> y;
     cout << "Sum of 2 numbers = " << sum(x, y) << endl;
     cout << "Product of 2 numbers = " << product(x, y) << endl;
     cout << "Difference of 2 numbers = " << difference(x, y) << endl;
     double n, m;
-    cout << "Enter 2 real numbers \n " << endl;
+    cout << "Enter 2 real numbers: \n ";
     cin >> n >> m;
     cout << "Sum of 2 numbers = " << sum(n, m) << endl;
     cout << "Product of 2 numbers = " << product(n, m) << endl;
