@@ -6,14 +6,16 @@
 
 #include <iostream>
 using namespace std;
-int main()
+main()
 {
-    int l, minute, hour, start = 945;
-    cin >> l;
-    if (l = 1)
-    {
-        minute = (l * 45);
-    }
-
-    return 0;
+    int a,b,c,d,e,f;
+    cin>>f;
+    a=9*60;
+    b=45;
+    c=5;
+    d=15;
+    e=a+b*f;
+    e+=(f-1)*c;
+    e+=(f-1)/2*(d-c);
+    cout<<e/60<< " " <<e%60;
 }

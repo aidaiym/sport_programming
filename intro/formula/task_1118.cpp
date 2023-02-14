@@ -1,18 +1,11 @@
-/*
-Улитка ползет по вертикальному шесту высотой H метров, поднимаясь за день на A метров, а за ночь спускаясь на B метров. На какой день улитка доползет до вершины шеста?
-*/
-
 #include <iostream>
 using namespace std;
-int main()
+main()
 {
-    int h, a, b, result, day=0;
-    cin >> h >> a >> b;
-    while (day == h)
-    {
-        day =  a - b;
-        day++;
+    int h,a,b,n=1;
+    cin>>h>>a>>b;
+    if(a<h){n+=(h-a)/(a-b);
+    if((h-a)%(a-b)>0)n++;
     }
-    cout << day << endl;
-    return 0;
+    cout<<n;
 }
