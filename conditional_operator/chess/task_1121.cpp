@@ -4,7 +4,7 @@ main()
 {
     int a, b, c, d;
     cin >> a >> b >> c >> d;
-    if (a - c == b - d || c - a == d - b || -(a - c) == b - d || -(c - a) == d - b || a == c || b == d)
+    if (a + 1 == c +1 || b+1 == d +1)
         cout << "YES";
     else
         cout << "NO";

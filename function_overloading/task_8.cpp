@@ -1,46 +1,32 @@
 /*
-Overload a function that takes two dates as input and returns the number of days between them.
+Overload a function that takes two dates as input and returns the number of days between them. 
 The function should be overloaded to handle different combinations of date formats such as mm/dd/yyyy, dd/mm/yyyy, and yyyy/mm/dd.
-*/
+*/ 
+
 #include <iostream>
+#include <ctime>
 using namespace std;
 
-struct Date
-{
-    int d, m, y;
-};
-
-const int monthDays[12] = {31, 28, 31, 30, 31, 30,
-                           31, 31, 30, 31, 30, 31};
-int countLeapYears(Date d)
-{
-    int years = d.y;
-    if (d.m <= 2)
-        years--;
-    return years / 4 - years / 100 + years / 400;
-}
-
-int getDifference(Date dt1, Date dt2)
-{
-    long int n1 = dt1.y * 365 + dt1.d;
-
-    for (int i = 0; i < dt1.m - 1; i++)
-        n1 += monthDays[i];
-    n1 += countLeapYears(dt1);
-
-    long int n2 = dt2.y * 365 + dt2.d;
-    for (int i = 0; i < dt2.m - 1; i++)
-        n2 += monthDays[i];
-    n2 += countLeapYears(dt2);
-    return (n2 - n1);
-}
+int dateCom(tm_mday day, tm_mon month, tm_year year );
+int dateCom(tm_mon month, tm_mday day,  tm_year year);
+int dateCom(tm_year year,  tm_mon month tm_mday day);
 
 int main()
 {
-    Date dt1 = {1, 2, 2000};
-    Date dt2 = {1, 2, 2004};
-    cout << "Difference between two dates is "
-         << getDifference(dt1, dt2);
-
+    tm_mday day_v = 
+    int x;
+    cout << "Enter integer number \n ";
+    cin >> x;
+    cout << "Square = " << square(x) << endl;
+    double y;
+    cout << "Enter double number \n ";
+    cin >> y;
+    cout << "Square " << square(y) << endl;
+    complex<double> z(10.0, 2.0);
+    cout << "Square " << square(z) << endl;
     return 0;
 }
+
+int dateCom(tm_mday day, tm_mon month, tm_year year );
+int dateCom(tm_mon month, tm_mday day,  tm_year year);
+int dateCom(tm_year year,  tm_mon month tm_mday day);
