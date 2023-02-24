@@ -1,13 +1,15 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
-int main()
+main()
 {
-
-int a;
-cin>>a;
-
-if(stoi(a.back())%2 ==0 )cout<<"WHITE";
-else cout<<"BLACK";
-return 0;
+    int b;
+    char a;
+    scanf("%c%d", &a, &b);
+    if (((a == 'A') || (a == 'C') || (a == 'E') || (a == 'G')) && (b % 2 != 0))
+        cout << "BLACK";
+    else if (((a == 'B') || (a == 'D') || (a == 'F') || (a == 'H')) && (b % 2 == 0))
+        cout << "BLACK";
+    else
+        cout << "WHITE";
 }
-
